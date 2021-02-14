@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 
     // UPDATE
-    const changeDevouredBtns = document.querySelectorAll('.change-sleep');
+    const changeDevouredBtns = document.querySelectorAll('.devour_it');
 
     // Set up the event listener for the create button
     if (changeDevouredBtns) {
@@ -13,10 +13,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
             button.addEventListener('click', (e) => {
                 // Grabs the id of the element that goes by the name, "id"
                 const id = e.target.getAttribute('data-id');
-                const newSleep = e.target.getAttribute('data-newsleep');
+                const devourIt = e.target.getAttribute('data-devourit');
 
                 const newDevouredState = {
-                    devoured: newSleep,
+                    devoured: devourIt,
                 };
 
                 fetch(`/api/burgers/${id}`, {
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     // Check that the response is all good
                     // Reload the page so the user can see the new quote
                     if (response.ok) {
-                        console.log(`changed devoured to: ${newSleep}`);
+                        console.log(`changed devoured to: ${devourIt}`);
                         location.reload('/');
                     } else {
                         alert('something went wrong!');

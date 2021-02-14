@@ -5,16 +5,13 @@
 <ul>
   {{#each burgers}}
   {{#unless devoured}}
-  {{!-- {{> burgers/burger-block devoured=false}} --}}
-  <li>
-	{{burger_name}}
+    <li>
+        {{burger_name}}
 
-	<button class="change-sleep" data-id="{{id}}" data-newsleep="{{devoured}}">
-        Devour It!
-		{{!-- {{#if devoured}}SLEEP TIME!{{else}}WAKE UP!{{/if}} --}}
-	</button>
-</li>
-
+        <button class="devour_it" data-id="{{id}}" data-devourit="true">
+                Devour It!
+        </button>
+    </li>
   {{/unless}}
   {{/each}}
 </ul>
@@ -24,8 +21,7 @@
 <ul>
   {{#each burgers}}
   {{#if devoured}}
-  {{!-- {{> burgers/burger-block devoured=true}} --}}
-  <li>{{burger_name}}</li>
+    <li>{{burger_name}}</li>
   {{/if}}
   {{/each}}
 </ul>
