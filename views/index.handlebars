@@ -1,10 +1,13 @@
-<img src="/assets/img/burger_explode.png" alt="exploding 3D burger" />
-
-<h1>Eat-da-Burger!</h1>
-
-<h2>Burgers that are ready to be devoured!</h2>
-
-<ul>
+<div class="container">
+  <div class="row text-center">
+    <div class="col">
+      <img src="/assets/img/burger_explode.png" alt="exploding 3D burger" />
+      <h1>Eat-da-Burger!</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <ul>
   {{#each burgers}}
   {{#unless devoured}}
     <li>
@@ -17,18 +20,20 @@
   {{/unless}}
   {{/each}}
 </ul>
-
-<h2>Burgers that are devoured!</h2>
-
-<ul>
+    </div>
+    <div class="col">
+      <ul>
   {{#each burgers}}
   {{#if devoured}}
     <li>{{id}}. {{burger_name}}</li>
   {{/if}}
   {{/each}}
 </ul>
-
-<form id="create-form">
+    </div>   
+  </div>
+  <div class="row">
+    <div class="col text-center">
+      <form id="create-form">
 
   <div class="form-group">
     <input type="text" id="BurgerName" name="name">
@@ -37,3 +42,6 @@
   <button type="submit">Submit</button>
   <p>Enter a burger you want to eat, then click the "Submit" button</p>
 </form>
+    </div>
+  </div>
+</div>
