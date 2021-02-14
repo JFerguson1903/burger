@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     // UPDATE
     const changeDevouredBtns = document.querySelectorAll('.devour_it');
 
-    // Set up the event listener for the create button
+    // Set up the event listener for the 'Devour It!' button
     if (changeDevouredBtns) {
         changeDevouredBtns.forEach((button) => {
             button.addEventListener('click', (e) => {
