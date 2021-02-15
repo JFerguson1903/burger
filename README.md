@@ -1,4 +1,4 @@
-# Unit 13 Homework - Eat-Da-Burger!
+# Unit 13 Homework - Eat-da-Burger!
 
 ## Badges
 
@@ -6,9 +6,9 @@
 
 ## Description
 
-I was given the assignment through Triliogy/WASHU Coding Bootcamp to "create a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). Be sure to follow the MVC design pattern; use Node and MySQL to query and route data in your app, and Handlebars to generate your HTML". The user story is: AS A user, I want to be able to submit a burger name and be able to see it on the left side of screen. I WANT to be able to click a "Devour it!" button and the burger will move to the right side of the page.
+I was given the assignment through Trilogy/WASHU Coding Bootcamp to "create a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). Be sure to follow the MVC design pattern; use Node and MySQL to query and route data in your app, and Handlebars to generate your HTML". The user story is: AS A user, I want to be able to submit a burger name and be able to see it on the left side of screen. I WANT to be able to click a "Devour it!" button and the burger will move to the right side of the page.
 
-The assignment was provided by Triliogy/WASHU Coding Bootcamp.
+The assignment was provided by Trilogy/WASHU Coding Bootcamp.
 
 ## Table of Contents
 
@@ -20,15 +20,18 @@ The assignment was provided by Triliogy/WASHU Coding Bootcamp.
 
 ## Usage
 
-[Click here]() to access the deployed application.
+[Click here]() to access the deployed application pictured below. Enjoy your burger!
 
-![ScreenshotOFeatDAburger]()
+![ScreenShotOfEatdaBurger](https://user-images.githubusercontent.com/72481828/107905874-58d0b000-6f15-11eb-858a-7707a41f8a14.png)
 
 ## Credits
 
-* Starter code and project idea provided by © 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
-* [Paal Williams](https://github.com/paalwilliams) demonstration to the Bootcamp class
+* Project idea provided by © 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+* [Paal Williams](https://github.com/paalwilliams) demonstration to the Bootcamp class.
 * [Heroku](https://www.heroku.com/)
+* [Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
+* Code derived from Trilogy Unit 13 - Activities - 17 that was taught and worked on in class.
+* [Burger Image](https://www.pngitem.com/middle/Thhom_transparent-background-burger-png-png-download/) was altered to be transparent.
 
 ## License
 
@@ -56,7 +59,7 @@ SOFTWARE.
 
 ## Tests
 
-<!-- The deployed application was tested for mobile resposivness with positive results.  The console log was also reviewed throught out the build process and after deployment through Heroku to address any issues that arose. -->
+The deployed application was tested for mobile resposivness with positive results.  The console log was also reviewed throught out the build process and after deployment through Heroku to address any issues that arose.
 
 ## Questions
 
