@@ -1,47 +1,41 @@
-<div class="container">
-  <div class="row text-center">
-    <div class="col">
-      <img src="/assets/img/burger_explode.png" alt="exploding 3D burger" />
-      <h1>Eat-da-Burger!</h1>
+<div class="container-lg">
+    <div class="row my-4 text-center">
+        <div class="col">
+            <img class="img-fluid" src="/assets/img/burger_explode.png" alt="exploding 3D burger" />
+            <h1 class="display-2">Eat-da-Burger!</h1>
+        </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <ul>
-  {{#each burgers}}
-  {{#unless devoured}}
-    <li>
-        {{id}}. {{burger_name}}
-
-        <button class="devour_it" data-id="{{id}}" data-devourit="true">
-                Devour It!
-        </button>
-    </li>
-  {{/unless}}
-  {{/each}}
-</ul>
+    <div class="row my-4">
+        <div class="col-12 col-sm-6 mb-4">
+            <ul class="list-group">
+            {{#each burgers}}
+            {{#unless devoured}}
+                <li class="list-group-item list-group-item-primary">
+                    {{id}}. {{burger_name}}
+                    <button class="btn btn-info btn-sm devour_it float-right" data-id="{{id}}" data-devourit="true">Devour It!</button>
+                </li>
+            {{/unless}}
+            {{/each}}
+            </ul>
+        </div>
+        <div class="col-12 col-sm-6">
+            <ul class="list-group">
+            {{#each burgers}}
+            {{#if devoured}}
+                <li class="list-group-item list-group-item-dark">{{id}}. {{burger_name}}</li>
+            {{/if}}
+            {{/each}}
+            </ul>
+        </div>   
     </div>
-    <div class="col">
-      <ul>
-  {{#each burgers}}
-  {{#if devoured}}
-    <li>{{id}}. {{burger_name}}</li>
-  {{/if}}
-  {{/each}}
-</ul>
-    </div>   
-  </div>
-  <div class="row">
-    <div class="col text-center">
-      <form id="create-form">
-
-  <div class="form-group">
-    <input type="text" id="BurgerName" name="name">
-  </div>
-
-  <button type="submit">Submit</button>
-  <p>Enter a burger you want to eat, then click the "Submit" button</p>
-</form>
+    <div class="row my-4 justify-content-center">
+        <div class="col-12 text-center">
+            <form id="create-form">
+                <div class="form-group">
+                    <input class="form-control form-control-lg text-center" type="text" id="BurgerName" name="name" placeholder="Enter a burger you want to eat, then click the 'Submit' button">
+                </div>
+                <button class="btn btn-secondary btn-lg border border-dark" type="submit">Submit</button>
+            </form>
+        </div>
     </div>
-  </div>
 </div>
