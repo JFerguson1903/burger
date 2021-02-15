@@ -20,7 +20,7 @@ The assignment was provided by Trilogy/WASHU Coding Bootcamp.
 
 ## Usage
 
-[Click here]() to access the deployed application pictured below. Enjoy your burger!
+[Click here](https://calm-river-53292.herokuapp.com/) to access the deployed application pictured below. Enjoy your burger!
 
 ![ScreenShotOfEatdaBurger](https://user-images.githubusercontent.com/72481828/107905874-58d0b000-6f15-11eb-858a-7707a41f8a14.png)
 
